@@ -16,5 +16,16 @@
       <!-- Tasks will be added here -->
     </div>
   </div>
+  <script>
+     let input = document.querySelector('input[type="text"]')
+    let task = document.querySelector(".content")
+    
+    function getValue() {
+      let inputValue = input.value
+      let newDiv = document.createElement("div")
+      task.appendChild(newDiv)
+      newDiv.textContent = inputValue
+    }
+  </script>
 </body>
 </html>
