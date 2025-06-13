@@ -17,15 +17,19 @@
     </div>
   </div>
   <script>
-     let input = document.querySelector('input[type="text"]')
-    let task = document.querySelector(".content")
-    
-    function getValue() {
-      let inputValue = input.value
-      let newDiv = document.createElement("div")
-      task.appendChild(newDiv)
-      newDiv.textContent = inputValue
-    }
+      let input = document.querySelector('input[type="text"]')
+      let task = document.querySelector(".content")
+      
+      function getValue() {
+        let inputValue = input.value
+        if (!inputValue === "") {
+          let newDiv = document.createElement("div")
+          task.appendChild(newDiv)
+          newDiv.textContent = inputValue
+          newDiv.classList.add("task-item")
+          inputValue = ""
+        } else alert("Oops! Write your task first.")
+      }
   </script>
 </body>
 </html>
