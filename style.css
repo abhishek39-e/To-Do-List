@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #E0F7FA;
+  /* background-color: #E0F7FA; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +83,19 @@ input[type="text"] {
 
 .task-item:last-child {
   border-bottom: none;
+}
+.task-item {
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background-color: #E6F7F4;   /* soft peach background */
+  color: #444;                 /* clean dark gray text */
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-item:hover {
+  background-color: #D2EFE9; /* slightly deeper peach on hover */
 }
